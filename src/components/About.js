@@ -145,24 +145,24 @@ const About = () => {
     }
   };
 
-  const imageVariants = {
-    hidden: { opacity: 0, scale: 0.8, rotate: -5 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      rotate: 0,
-      transition: {
-        duration: 0.8,
-        ease: "easeOut",
-        delay: 0.5
-      }
-    },
-    hover: {
-      scale: 1.03,
-      rotate: 1,
-      transition: { duration: 0.3 }
-    }
-  };
+  // const imageVariants = {
+  //   hidden: { opacity: 0, scale: 0.8, rotate: -5 },
+  //   visible: {
+  //     opacity: 1,
+  //     scale: 1,
+  //     rotate: 0,
+  //     transition: {
+  //       duration: 0.8,
+  //       ease: "easeOut",
+  //       delay: 0.5
+  //     }
+  //   },
+  //   hover: {
+  //     scale: 1.03,
+  //     rotate: 1,
+  //     transition: { duration: 0.3 }
+  //   }
+  // };
 
   return (
     <section id="about" className="about">
