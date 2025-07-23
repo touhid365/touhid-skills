@@ -21,9 +21,7 @@ import {
   FiTrash2, 
   FiEdit2,
   FiPlus,
-  FiLogOut,
-  FiGithub,
-  FiExternalLink
+  FiLogOut
 } from 'react-icons/fi';
 import '../styles/Admin.css';
 
