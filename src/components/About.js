@@ -37,12 +37,12 @@ const About = () => {
     { icon: <FaAward />, number: '5+', text: 'Projects Completed', color: '#4895ef' }
   ];
 
-  const skills = [
-    { name: 'Web Development', percentage: 90, icon: <FaCode />, color: '#4361ee' },
-    { name: 'UI/UX Design', percentage: 80, icon: <FaPalette />, color: '#7209b7' },
-    { name: 'Mobile Development', percentage: 75, icon: <FaMobile />, color: '#f72585' },
-    { name: 'Database Management', percentage: 70, icon: <FaServer />, color: '#4cc9f0' }
-  ];
+  // const skills = [
+  //   { name: 'Web Development', percentage: 90, icon: <FaCode />, color: '#4361ee' },
+  //   { name: 'UI/UX Design', percentage: 80, icon: <FaPalette />, color: '#7209b7' },
+  //   { name: 'Mobile Development', percentage: 75, icon: <FaMobile />, color: '#f72585' },
+  //   { name: 'Database Management', percentage: 70, icon: <FaServer />, color: '#4cc9f0' }
+  // ];
 
   const experience = [
     {
