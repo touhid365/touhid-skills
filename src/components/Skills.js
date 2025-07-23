@@ -1,7 +1,7 @@
 
 import { motion } from 'framer-motion';
-import { FaReact, FaNodeJs, FaDatabase, FaCode, FaBootstrap, FaPython, FaPhp, FaFileExcel, FaJava, FaCogs } from 'react-icons/fa';
-import { SiJavascript, SiTypescript, SiFirebase, SiGraphql, SiNextdotjs, SiMongodb, SiTailwindcss, SiRedux, SiExpress, SiGit, SiMysql, SiDart, SiGithub, SiVscodium, SiVisualstudio, SiWinamp, SiXampp, SiAndroidstudio, SiTableau, SiMicrosoftexcel, SiSpring } from 'react-icons/si';
+import { FaReact, FaNodeJs, FaDatabase, FaCode, FaBootstrap, FaPython, FaPhp, FaJava } from 'react-icons/fa';
+import { SiJavascript, SiTypescript, SiFirebase, SiNextdotjs, SiMongodb, SiTailwindcss, SiGit, SiMysql, SiDart, SiGithub, SiVisualstudio, SiXampp, SiAndroidstudio, SiTableau, SiMicrosoftexcel, SiSpring } from 'react-icons/si';
 import { useState } from 'react';
 import '../styles/Skills.css';
 
