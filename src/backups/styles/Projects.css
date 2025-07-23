@@ -1,0 +1,410 @@
+
+/* Projects Section */
+.projects-section {
+  padding: var(--section-spacing) 0;
+  background-color: var(--bg-color);
+}
+
+/* Project Cards */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.project-card {
+  background: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  border: 1px solid var(--border-light);
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.featured-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--gradient-accent);
+  color: white;
+  padding: 0.25rem 1rem;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 10;
+  box-shadow: var(--shadow-sm);
+}
+
+.project-image-container {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.05);
+}
+
+.project-content {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--text-color);
+}
+
+.project-pricing {
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--text-color);
+  display: block;
+}
+
+.member-price {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+/* Tech Stack */
+.tech-stack {
+  margin: 1rem 0;
+}
+
+.tech-icons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.tech-item {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-tertiary);
+  border-radius: var(--radius);
+  color: var(--text-color);
+  font-size: 0.9rem;
+  cursor: default;
+  transition: var(--transition);
+}
+
+.tech-icon {
+  font-size: 1.2rem;
+}
+
+/* Project Actions */
+.project-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.project-actions .btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Search */
+.search-container {
+  position: relative;
+  max-width: 500px;
+  margin: 2rem auto 0;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-light);
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.875rem 1rem 0.875rem 3rem;
+  border-radius: var(--radius);
+  border: 2px solid var(--border-color);
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.2);
+}
+
+/* No Results */
+.no-results {
+  text-align: center;
+  padding: 4rem 0;
+  color: var(--text-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Loading */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .project-content {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* .project-actions {
+    flex-direction: column;
+  } */
+  
+  .tech-item {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .tech-icon {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+/* :root {
+  /* Light mode colors *
+  --tech-bg: #f8fafc;
+  --tech-border: #e2e8f0;
+  --tech-label: #6b7280;
+  --tech-text: #1e293b;
+  --tech-shadow: rgba(0, 0, 0, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Dark mode colors *
+    --tech-bg: #1e293b;
+    --tech-border: #334155;
+    --tech-label: #94a3b8;
+    --tech-text: #f8fafc;
+    --tech-shadow: rgba(0, 0, 0, 0.3);
+  } */
+
+  /* Special handling for icons with white backgrounds in dark mode *
+  .tech-icon-item .si-nextdotjs,
+  .tech-icon-item .si-express {
+    background-color: var(--tech-bg);
+  }
+  
+  .tech-icon-item .fa-apple::before {
+    background: var(--tech-bg);
+  }
+}
+
+/* ===== Tech Stack Container ===== */
+.tech-stack {
+  margin: 1rem 0 1.5rem;
+}
+
+.tech-stack-label {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--tech-label);
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+/* ===== Icons Grid ===== */
+.tech-icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+/* ===== Individual Tech Items ===== */
+.tech-icon-item {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 0.8rem;
+  background-color: var(--bg-tertiary);
+  border-radius: 6px;
+  border: 1px solid var(--tech-border);
+  transition: all 0.2s ease;
+  color: var(--text-color);
+
+}
+
+.tech-icon-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px var(--shadow);
+}
+
+/* ===== Icon Styling ===== */
+.tech-icon-item svg {
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-right: 0.4rem;
+}
+
+/* ===== Official Brand Colors ===== */
+/* React */
+.tech-icon-item .fa-react,
+.tech-icon-item .si-react { color: #61dafb; }
+
+/* Node.js */
+.tech-icon-item .fa-node-js { color: #339933; }
+
+/* JavaScript */
+.tech-icon-item .fa-js { color: #f7df1e; }
+
+/* TypeScript */
+.tech-icon-item .si-typescript { color: #3178c6; }
+
+/* Next.js - Black with white bg */
+.tech-icon-item .si-nextdotjs {
+  color: #000000;
+  background-color: #ffffff;
+  padding: 1px;
+  border-radius: 2px;
+}
+
+/* Firebase */
+.tech-icon-item .si-firebase { color: #ffca28; }
+
+/* MongoDB */
+.tech-icon-item .si-mongodb { color: #47a248; }
+
+/* Express - Black with white bg */
+.tech-icon-item .si-express {
+  color: #000000;
+  background-color: #ffffff;
+  padding: 1px;
+  border-radius: 2px;
+}
+
+/* GraphQL */
+.tech-icon-item .si-graphql { color: #e10098; }
+
+/* Flutter */
+.tech-icon-item .si-flutter { color: #02569b; }
+
+/* Django */
+.tech-icon-item .si-django { color: #092e20; }
+
+/* Tailwind CSS */
+.tech-icon-item .si-tailwindcss { color: #06b6d4; }
+
+/* Android */
+.tech-icon-item .fa-android { color: #3ddc84; }
+
+/* Apple/iOS - Black with white circle */
+.tech-icon-item .fa-apple {
+  position: relative;
+  color: #000000;
+}
+.tech-icon-item .fa-apple::before {
+  content: "";
+  position: absolute;
+  width: 130%;
+  height: 130%;
+  top: -15%;
+  left: -15%;
+  background: white;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .tech-icon-item {
+    padding: 0.35rem 0.7rem;
+  }
+  .tech-icon-item svg {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+/* Base icon style */
+.tech-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+}
+
+/* Black icon containers */
+.tech-icon-wrapper.black-icon {
+  background: white;
+  padding: 2px;
+  border-radius: 3px;
+  display: inline-flex;
+}
+
+.tech-icon-wrapper.ios-icon {
+  position: relative;
+}
+.tech-icon-wrapper.ios-icon::after {
+  content: "";
+  position: absolute;
+  width: 130%;
+  height: 130%;
+  top: -15%;
+  left: -15%;
+  background: white;
+  border-radius: 50%;
+  z-index: -1;
+}
