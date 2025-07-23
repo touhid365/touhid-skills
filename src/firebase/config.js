@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 import { getAuth } from "firebase/auth";
-import { getAnalytics } from "firebase/analytics";
+//import { getAnalytics } from "firebase/analytics";
 
 // const firebaseConfig = {
 //   apiKey: process.env.REACT_APP_API_KEY,
@@ -28,7 +28,12 @@ const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
 export const storage = getStorage(app);
 export const auth = getAuth(app);
-const analytics = getAnalytics(app);
+/**
+ * An instance of Firebase Analytics initialized with the provided app.
+ * Used to log events and analyze user interactions within the application.
+ * @type {import('firebase/analytics').Analytics}
+ */
+//const analytics = getAnalytics(app);
 
 
 
