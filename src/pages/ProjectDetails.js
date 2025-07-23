@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase/config';
-import { FaGithub, FaExternalLinkAlt, FaArrowLeft, FaRegClock, FaCode, FaLayerGroup, FaTags } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaArrowLeft, FaRegClock, FaLayerGroup, FaTags } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import '../styles/ProjectDetails.css';
 
