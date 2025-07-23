@@ -1,6 +1,6 @@
 
 import { motion } from 'framer-motion';
-import { FaUserGraduate, FaBriefcase, FaAward, FaCode, FaServer, FaMobile, FaPalette, FaGraduationCap, FaBuilding, FaAws, FaDocker } from 'react-icons/fa';
+import { FaUserGraduate, FaBriefcase, FaAward, FaCode, FaGraduationCap, FaBuilding, FaAws, FaDocker } from 'react-icons/fa';
 import {  
   SiDocker, 
   SiMysql, 
