@@ -229,7 +229,7 @@ export default function Admin() {
       setLoading(false);
     };
     fetchProjects();
-  }, [user]);
+  }, [user, projectsCol]);
 
   // Render login form if not authenticated
   if (!user) {
