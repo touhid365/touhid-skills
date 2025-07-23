@@ -245,7 +245,7 @@ useEffect(() => {
     setLoading(false);
   };
   fetchProjects();
-}, [user]); // 'projectsCol' is stable; safe to exclude
+}, [user, projectsCol]); // 'projectsCol' is stable; safe to exclude
 
 
 
