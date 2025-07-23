@@ -5,7 +5,7 @@ import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { FaGithub, FaExternalLinkAlt, FaArrowLeft, FaRegClock, FaLayerGroup, FaTags } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import '../styles/ProjectDetails.css';
+//import '../styles/ProjectDetails.css';
 
 const ProjectDetails = () => {
   const { id } = useParams();

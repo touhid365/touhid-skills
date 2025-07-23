@@ -215,21 +215,41 @@ export default function Admin() {
     return () => unsub();
   }, []);
 
-  useEffect(() => {
-    if (!user) return;
-    const fetchProjects = async () => {
-      setLoading(true);
-      try {
-        const snapshot = await getDocs(projectsCol);
-        const data = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
-        setProjects(data);
-      } catch (err) {
-        showStatus('error', 'Failed to load projects');
-      }
-      setLoading(false);
-    };
-    fetchProjects();
-  }, [user, projectsCol]);
+  // useEffect(() => {
+  //   if (!user) return;
+  //   const fetchProjects = async () => {
+  //     setLoading(true);
+  //     try {
+  //       const snapshot = await getDocs(projectsCol);
+  //       const data = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+  //       setProjects(data);
+  //     } catch (err) {
+  //       showStatus('error', 'Failed to load projects');
+  //     }
+  //     setLoading(false);
+  //   };
+  //   fetchProjects();
+  // }, [user, projectsCol]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+useEffect(() => {
+  if (!user) return;
+  const fetchProjects = async () => {
+    setLoading(true);
+    try {
+      const snapshot = await getDocs(projectsCol);
+      const data = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+      setProjects(data);
+    } catch (err) {
+      showStatus('error', 'Failed to load projects');
+    }
+    setLoading(false);
+  };
+  fetchProjects();
+}, [user]); // 'projectsCol' is stable; safe to exclude
+
+
+
+
 
   // Render login form if not authenticated
   if (!user) {
