@@ -236,37 +236,7 @@ const About = () => {
               ))}
             </motion.div>
 
-            {/* Skills 
-            <motion.div
-              className="about-skills"
-              variants={containerVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-            >
-              <h4>My Skills</h4>
-              {skills.map((skill, index) => (
-                <div key={index} className="skill-item">
-                  <div className="skill-info">
-                    <span className="skill-icon" style={{ color: skill.color }}>
-                      {skill.icon}
-                    </span>
-                    <span className="skill-name">{skill.name}</span>
-                    <span className="skill-percent">{skill.percentage}%</span>
-                  </div>
-                  <div className="skill-bar">
-                    <motion.div
-                      initial={{ width: 0 }}
-                      whileInView={{ width: `${skill.percentage}%` }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 1, delay: index * 0.2, type: 'spring' }}
-                      className="skill-progress"
-                      style={{ backgroundColor: skill.color }}
-                    ></motion.div>
-                  </div>
-                </div>
-              ))}
-            </motion.div> */}
+           
 
             {/* Tech Stack */}
             <motion.div
