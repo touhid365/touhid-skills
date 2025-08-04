@@ -246,7 +246,7 @@ useEffect(() => {
   };
   fetchProjects();
 
- }, [user, projectsCol]); // removed projectsCol from dependencies to avoid unnecessary re-renders
+ }, [user]); // removed projectsCol from dependencies to avoid unnecessary re-renders
 
 
 
