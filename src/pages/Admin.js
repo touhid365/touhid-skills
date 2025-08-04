@@ -226,7 +226,7 @@ export default function Admin() {
   //     } catch (err) {
   //       showStatus('error', 'Failed to load projects');
   //     }
-  //     setLoading(false);
+  // //     setLoading(false);
   //   };
   //   fetchProjects();
   // }, [user, projectsCol]);
@@ -245,7 +245,8 @@ useEffect(() => {
     setLoading(false);
   };
   fetchProjects();
-}, [user, projectsCol]); // 'projectsCol' is stable; safe to exclude
+
+ }, [user, projectsCol]); // removed projectsCol from dependencies to avoid unnecessary re-renders
 
 
 
